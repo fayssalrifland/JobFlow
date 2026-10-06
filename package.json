@@ -1,6 +1,7 @@
 {
   "name": "nextjs-postgresql-template",
   "private": true,
+  "trustedDependencies": ["pg-cloudflare"],
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -10,9 +11,6 @@
     "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
     "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview"
   },
-  {
-  "trustedDependencies": ["pg-cloudflare"]
-},
   "dependencies": {
     "@dnd-kit/core": "^6.3.1",
     "@dnd-kit/sortable": "^10.0.0",
